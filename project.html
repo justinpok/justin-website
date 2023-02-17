@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pok Chun Ting Project</title>
+<meta name="author" content="Pok Chun Ting">
+<meta name="descrption" content="Pok Chun Ting's Project">
+<meta name="key word" content="Pok Chun Ting's  Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<header>
+	<!-- Nav HTML code copied from https://www.w3schools.com/bootstrap5/bootstrap_navbar.php -->
+	<nav class="navbar navbar-expand-sm bg-white navbar-light nav-pri">
+	  <div class="container">
+		  <h1 class="top_title">Pok Chun Ting</h1>
+		<div class="collapse navbar-collapse nav_design " id="collapsibleNavbar">
+		  <ul class="navbar-nav nav-pri ">
+				<li class="nav-item ">
+					<a class="nav-link nav-text " href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-text" href="project.html">Art Works</a>
+				</li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn nav-link nav-text">Website</button>
+							<div class="dropdown-content">
+							<a href="website.html">Overview</a>
+							<a href="CCT460A1.html">CCT460 Start Up</a>
+							<a href="process.html">CCT460 Portfolio</a>
+							</div>
+					</div> 
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-text"  href="resume.html">Resume</a>
+				</li> 
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+</header>
+<main>
+	<h2 class="container p-3 port fw-bold">Art works</h2>
+<div class="container profo">
+<!-- Nav HTML code copied from https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
+<!-- Nav HTML code copied from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->	
+	<div class="ps-3 pt-3" id="myBtnContainer">
+	  <button class="btn active " onclick="filterSelection('all')"> Show all</button>
+		<button class="btn " onclick="filterSelection('paint')"> Painting</button>
+	  <button class="btn" onclick="filterSelection('sculpture')"> Sculpture</button>
+		<button class="btn" onclick="filterSelection('print')"> Print Making</button>
+		<button class="btn" onclick="filterSelection('sketch')"> Sketches</button>
+		<button class="btn" onclick="filterSelection('brochure')"> Brochure</button>
+	</div>
+	<div class="row">
+		<div class="column paint col-4 mt-2">
+			<div class="content">
+				<img src=".//image/art/eagle.JPG" alt="engle's painting" style="width:100%">
+				<h4>"The Engle"</h4>
+				<p>Oil pastel</p>
+			</div>
+		</div>
+			<div class="column paint col-4 mt-2">
+			<div class="content">
+				<img src=".//image/art/protrait.JPG" alt="Nature" style="width:100%">
+				<h4>Self portrait</h4>
+				<p>Acrylic on canvas</p>
+			</div>
+		</div>	
+		<div class="column sketch col-4 mt-2">
+			<div class="content">
+				<div class="slideshow-container">
+					<div class="mySlides1 ">
+						<img src="./image/art/sketch/sk1.JPG" alt="sketch of skeleton" style="width:100%">
+					</div>
+					<div class="mySlides1 ">
+						<img src="./image/art/sketch/sk2.JPG" alt="sketch of a man"  style="width:100%">
+					</div>
+					<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+					<script>
+						let slide1Index = 1;  
+					showSlides1(slide1Index);
+					function plusSlides1(n) {
+					showSlides1(slide1Index += n);
+					}
+					function currentSlide1(n) {
+					showSlides2(slide2Index= n);
+					}
+					function showSlides1(n) {
+					let i;
+					let slides = document.getElementsByClassName("mySlides1");
+					let dots = document.getElementsByClassName("dot1");
+					if (n > slides.length) {slide1Index = 1}
+					if (n < 1) {slide1Index = slides.length}
+					for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+					}
+					for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slide1Index-1].style.display = "block";
+					}	
+					</script>   
+				</div>
+				<h4>Pencil Sketches</h4>
+			</div>
+		</div>
+		<div class="column paint col-4 mt-2">
+			<div class="content">
+				<img src=".//image/art/landscape.JPG" alt="Landscape of a Park" style="width:100%">
+				<h4>"The Winter"</h4>
+				<p>Acrylic on canvas- Realism</p>
+			</div>
+		</div>
+		<div class="column paint col-4 mt-2">
+			<div class="content">
+				<img src=".//image/art/sunset.JPG" alt="Landscape of Sunset" style="width:100%">
+				<h4>"Sunset"</h4>
+				<p>Acrylic on canvas- Impressionism</p>
+			</div>
+		</div>
+		<div class="column sculpture col-4 mt-2">
+			<div class="content">
+			<div class="slideshow-container">
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides ">
+			<img src="./image/art/ceramics/c1.jpeg" alt="ceramic set" style="width:100%">
+			</div>
+			<div class="mySlides ">
+			<img src="./image/art/ceramics/c2.jpeg" alt="ceramic set"  style="width:100%">
+			</div>
+			<div class="mySlides ">
+			<img src="./image/art/ceramics/c3.jpeg" alt="ceramic set"  style="width:100%">
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<script>
+			let slideIndex = 1;  
+			showSlides(slideIndex);
+			function plusSlides(n) {
+			showSlides(slideIndex += n);
+			}
+			function currentSlide(n) {
+			showSlides(slideIndex = n);
+			}
+			function showSlides(n) {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			}	
+			</script>
+			</div>
+			<h4>"The Community"</h4>
+			<p>Ceramics Sculpture</p>
+			</div>
+		</div>	
+		<div class="column print col-4 mt-2">
+			<div class="content">
+				<img src=".//image/art/print.JPG" alt="Printmaking design of a penny" style="width:100%">
+				<h4>"The Penny"</h4>
+				<p>Print Making</p>
+			</div>
+		</div>
+				<div class="column brochure col-4 mt-2">
+			<div class="content">
+				<img src=".//image/art/design1.jpg" alt="Print brochure page1 " style="width:100%">
+				<h4>"Green NCAP LCA"</h4>
+				<p>Print Brochure</p>
+			</div>
+		</div>
+				<div class="column brochure col-4 mt-2">
+			<div class="content">
+				<img src=".//image/art/design2.jpg" alt="Print brochure page 2" style="width:100%">
+				<h4>"Green NCAP LCA"</h4>
+				<p>Print Brochure</p>
+			</div>
+		</div>
+	</div>
+		<script>
+		filterSelection("all")
+		function filterSelection(c) {
+		  var x, i;
+		  x = document.getElementsByClassName("column");
+		  if (c == "all") c = "";
+		  for (i = 0; i < x.length; i++) {
+			w3RemoveClass(x[i], "show");
+			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		  }
+		}
+		function w3AddClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+			if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		  }
+		}
+		function w3RemoveClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i]) > -1) {
+			  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+			}
+		  }
+		  element.className = arr1.join(" ");
+		}
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function(){
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+		  });
+		}
+		</script>	
+</div>
+</main>
+<footer class="foot">
+		<p >©2023 Produced by Pok Chun Ting</p>	
+</footer>
+</body>
+</html>

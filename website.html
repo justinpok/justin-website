@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pok Chun Ting Website</title>
+<meta name="author" content="Pok Chun Ting">
+<meta name="descrption" content="Pok Chun Ting's Website">
+<meta name="key word" content="Pok Chun Ting's  Website">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<header>
+	<!-- Nav HTML code copied from https://www.w3schools.com/bootstrap5/bootstrap_navbar.php -->
+	<nav class="navbar navbar-expand-sm bg-white navbar-light nav-pri">
+	  <div class="container">
+		  <h1 class="top_title">Pok Chun Ting</h1>
+		<div class="collapse navbar-collapse nav_design " id="collapsibleNavbar">
+		  <ul class="navbar-nav nav-pri ">
+				<li class="nav-item ">
+					<a class="nav-link nav-text " href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-text" href="project.html">Art Works</a>
+				</li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn nav-link nav-text">Website</button>
+							<div class="dropdown-content">
+							<a href="website.html">Overview</a>
+							<a href="CCT460A1.html">CCT460 Start Up</a>
+							<a href="process.html">CCT460 Portfolio</a>
+							</div>
+					</div> 
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-text"  href="resume.html">Resume</a>
+				</li> 
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+</header>
+<main>
+	<h2 class="container p-3 port fw-bold">Web Design</h2>
+<div class="container profo">
+	<div class="row">
+		<div class="column web col-4 mt-2">
+			<div class="content">
+			<div class="slideshow-container">
+			<!-- Full-width images with number and caption text -->
+				<div class="mySlides2 ">
+					<img src="./image/460/p1.jpg" alt="CCT460 Assignment1 Home Page " style="width:100%">
+				</div>
+				<div class="mySlides2 ">
+					<img src="./image/460/p2.jpg" alt="CCT460 Assignment1 About Page " style="width:100%">
+				</div>
+				<div class="mySlides2 ">
+					<img src="./image/460/p3.jpg" alt="CCT460 Assignment1 News Page " style="width:100%">
+				</div>
+				<div class="mySlides2 ">
+					<img src="./image/460/p4.jpg" alt="CCT460 Assignment1 Course Page " style="width:100%">
+				</div>
+				<div class="mySlides2 ">
+					<img src="./image/460/p5.jpg" alt="CCT460 Assignment1 Gallery Page " style="width:100%">
+				</div>
+				<div class="mySlides2 ">
+					<img src="./image/460/p6.jpg" alt="CCT460 Assignment1 Contact Page " style="width:100%">
+				</div>
+				<div class="mySlides2 ">
+					<img src="./image/460/p7.jpg" alt="CCT460 Assignment1 Shop Page " style="width:100%">
+				</div>
+			<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides2 (1)">&#10095;</a>
+			<script>
+					let slide2Index = 1;  
+				showSlides2(slide2Index);
+				// Next/previous controls
+				function plusSlides2(n) {
+				showSlides2(slide2Index += n);
+				}
+				function currentSlide2(n) {
+				showSlides2(slide2Index= n);
+				}
+				function showSlides2(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides2");
+				let dots = document.getElementsByClassName("dot2");
+				if (n > slides.length) {slide2Index = 1}
+				if (n < 1) {slide2Index = slides.length}
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slide2Index-1].style.display = "block";
+				}	
+			</script>
+			</div>
+				<h4>CCT460 Assignment 1 (Start up site)</h4>
+				<p>Word Press, CMS, SEO </p>
+			</div>
+		</div>
+		
+		<div class="column web col-4 mt-2">
+		<div class="content">
+		<div class="slideshow-container">
+		<!-- Full-width images with number and caption text -->
+			<div class="mySlides3 ">
+				<img src="./image/360/p1.jpg" alt="CCT360 Assignment1 Home Page " style="width:100%">
+			</div>
+			<div class="mySlides3 ">
+				<img src="./image/360/p2.jpg" alt="CCT360 Assignment1 About Page " style="width:100%">
+			</div>
+			<div class="mySlides3 ">
+				<img src="./image/360/p3.jpg" alt="CCT360 Assignment1 Resume Page " style="width:100%">
+			</div>
+			<div class="mySlides3 ">
+				<img src="./image/360/p4.jpg" alt="CCT360 Assignment1 Sailing Page " style="width:100%">
+			</div>
+			<div class="mySlides3 ">
+				<img src="./image/360/p5.jpg" alt="CCT360 Assignment1 Gallery Page " style="width:100%">
+			</div>
+			<div class="mySlides3 ">
+				<img src="./image/360/p6.jpg" alt="CCT360 Assignment1 Contact Page " style="width:100%">
+			</div>
+			<a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides3 (1)">&#10095;</a>
+		<script>
+			let slide3Index = 1;  
+		showSlides3(slide3Index);
+		function plusSlides3(n) {
+		showSlides3(slide3Index += n);
+		}
+		function currentSlide3(n) {
+		showSlides3(slide3Index= n);
+		}
+		function showSlides3(n) {
+		let i;
+		let slides = document.getElementsByClassName("mySlides3");
+		let dots = document.getElementsByClassName("dot3");
+		if (n > slides.length) {slide3Index = 1}
+		if (n < 1) {slide3Index = slides.length}
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slide3Index-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+		}	
+		</script>
+		</div>
+		<h4>CCT360 Assignment 2 (Portfolio site)</h4>
+		<p>Html, CSS, Bootsrapt, Java</p>
+		</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="column web col-4 mt-2">
+		<div class="content">
+		<div class="slideshow-container">
+		<!-- Full-width images with number and caption text -->
+		<div class="mySlides4 ">
+		<img src="./image/Wire/46021.jpg" alt="CCT460 Portfolio Home Page " style="width:100%">
+		</div>
+		<div class="mySlides4 ">
+		<img src="./image/Wire/46022.jpg" alt="CCT460 Portfolio Page " style="width:100%">
+		</div>
+		<div class="mySlides4 ">
+		<img src="./image/Wire/46023.jpg" alt="CCT460 Portfolio CCT460A1 " style="width:100%">
+		</div>
+		<div class="mySlides4 ">
+		<img src="./image/Wire/46024.jpg" alt="CCT460 Portfolio Resume Page" style="width:100%">
+		</div>
+		<a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides4 (1)">&#10095;</a>
+		<script>
+			let slide4Index = 1;  
+		showSlides4(slide4Index);
+		// Next/previous controls
+		function plusSlides4(n) {
+		showSlides4(slide4Index += n);
+		}
+		function currentSlide4(n) {
+		showSlides4(slide4Index= n);
+		}
+		function showSlides4(n) {
+		let i;
+		let slides = document.getElementsByClassName("mySlides4");
+		let dots = document.getElementsByClassName("dot4");
+		if (n > slides.length) {slide4Index = 1}
+		if (n < 1) {slide4Index = slides.length}
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slide4Index-1].style.display = "block";
+		}	
+		</script>
+		</div>
+		<h4>CCT460 Portfolio Page</h4>
+		<p>HTML5, CSS3, Boot Strap5, Java, SEO</p>
+		</div>
+		</div>	
+	</div>
+		<script>
+		filterSelection("all")
+		function filterSelection(c) {
+		  var x, i;
+		  x = document.getElementsByClassName("column");
+		  if (c == "all") c = "";
+		  for (i = 0; i < x.length; i++) {
+			w3RemoveClass(x[i], "show");
+			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		  }
+		}
+		function w3AddClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+			if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		  }
+		}
+		function w3RemoveClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i]) > -1) {
+			  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+			}
+		  }
+		  element.className = arr1.join(" ");
+		}
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function(){
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+		  });
+		}
+		</script>	
+</div>
+</main>
+<footer class="foot">
+		<p >©2023 Produced by Pok Chun Ting</p>	
+</footer>
+</body>
+</html>

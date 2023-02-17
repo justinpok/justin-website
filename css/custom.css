@@ -1,0 +1,345 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Varela+Round&display=swap');
+body{
+	font-family: 'Varela Round', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.line{
+	border-bottom: 3px solid  #ff4dff;
+}
+.nav_design{
+	font-size: 18px;
+	justify-content: flex-end;
+}
+.top_title {
+	font-family: 'Permanent Marker', cursive;
+	padding:20px ;
+	font-size: 3.8em;
+}
+.nav_design ul li{
+	padding: 0px 15px;
+	font-size: 1.2em;
+	font-family: 'Varela Round', sans-serif;
+	font-color: #fff;
+}
+.nav_design ul li:hover{
+	border-bottom: 2px solid black ;
+}
+.spotlight{
+	background-image: url("../image/spot1.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center left;
+	height: 800px;
+}
+#spotlight_content{
+	width: 700px;
+	height: 200px;
+	background-color: rgba(0,0,0,0.6);
+	position: relative;
+	top: 280px;
+	left: 400px;
+	color: #fff;
+	padding: 50px;
+	text-align: center;	
+}
+#spotlight_content h2 {
+	font-size: 3em;	
+	font-weight: bold;
+}
+#spotlight_content h4 {
+	font-size:1.5em;
+}
+.bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-2 {
+  background-image: url("../image/par2.jpg");
+  height: 500px;
+}
+.bgimg-3 {
+  background-image: url("../image/par3.jpg");
+  min-height: 400px;
+}
+.parallax-caption {
+  position: relative;
+  top:70px;
+  text-align: center;
+  color: #000;
+}
+.parallax-caption a {
+  background-color: rgba(125,0,0,0.6) ;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 1.5em;
+	font-family: 'Varela Round', sans-serif;
+	text-decoration: none;
+}
+.parallax-caption a:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: rgba(255,102,0,0.6);
+}
+@media only screen and (max-device-width: 1024px) {
+.bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+#section1 h3{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 3em;
+	padding: 5px 10px;
+}
+#section1 p{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.3em;
+	padding: 5px 10px;
+}
+.par_text{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.4em;
+	padding: 5px 10px;
+}
+.profo{
+	background-color: #f1f1f1;
+}
+.row {
+  margin: 10px -16px;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; 
+}
+.row:after {
+  content: "";
+  display: table;
+}
+.content {
+  background-color: white;
+	box-shadow: 10px 10px 10px 1px #999999;
+  padding: 10px;
+}
+.content h4{
+	padding: 15px 0 5px;
+	font-style: italic;
+	font-size: 1.3em;
+}
+.content p{
+	font-size: 0.9em;
+}
+.show {
+  display: block;
+}
+.btn {
+  border: none;
+  outline:thin;
+  padding: 12px 16px;
+  background-color: #fff;
+  cursor: pointer;
+	margin: 0 5px;
+}
+.btn:hover {
+  background-color: #cccccc;
+	color:#fff
+}
+.btn.active {
+  background-color:	#4d4d4d;
+  color: white;
+	margin: 0 5px;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides .mySlides1 .mySlides2 .mySlides3 .mySlides4{
+  display: none; 
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+ background-color: rgba(0,0,0,0.4);
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+text-decoration: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.assignment{
+	box-shadow: 10px 10px 15px #999999;
+}
+.assignment img {
+  opacity: 0.8; 
+  cursor: pointer; 
+width: 100%;
+	margin:5px;
+}
+.assignment img:hover {
+  opacity: 1;
+}
+#expandedImg2,#expandedImg1 {
+	box-shadow: 10px 10px 15px #999999;
+	margin:10px;
+}
+.lin a{
+	text-decoration: none;
+	color:#7300e6;
+	font-size: 0.8em;
+}
+.lin a:hover{
+	text-decoration: none;
+	color:#e6004c;
+	font-size: 0.8em;
+}
+.pro{
+	text-align: start;
+}
+.detail{
+	font-family: 'Varela Round', sans-serif;
+}
+.detail h4{
+	font-size: 1.7em;
+	padding: 3px;	
+	border-bottom: 3px solid  #ff4dff;
+}
+.detail h4{
+	font-size: 1.7em;
+	padding: 3px;
+}
+.detail p{
+	font-size: 1.3em;
+	padding: 3px;
+}
+.port{
+	font-size: 2em;
+	border-bottom: 3px solid  #ff4dff;
+}
+.resume h2{
+	font-size: 2.3em;
+	font-weight:bold;
+}
+.resume h3, .process h4{
+	padding:15px 0 5px 0;
+	font-size: 1.7em;
+	border-bottom: 3px solid  #ff4dff;
+}
+.resume h4, .process h5{
+	font-size: 1.5em;
+	padding:5px 0;
+	font-weight:bold;
+}
+.resume h5{
+	font-size: 1.3em;
+}
+.resume h8{
+	font-size: 1.3em;
+	padding:5px 0;
+	color: #7300e6;
+	font-weight: bold;
+}
+.resume ul li{
+	font-size: 1.3em;
+	padding:5px 0;
+}
+.resume ol li {
+	font-size: 1.3em;
+	padding:5px 0;
+}
+.resume ol li ul li, .resume h6{
+	font-size: 1em;
+	padding:2px 0;
+}
+.resume_out {
+	box-shadow: 20px 20px 15px #999999;
+}
+.foot{
+	text-align: center;
+	padding: 30px 20px;
+	font-size: 1.2em;
+}
+.process p{
+	font-size: 1.3em;
+	padding:5px 0;
+}
+.process a{
+	color:#7300e6;
+	text-decoration: none;
+}
+.process a:hover{
+	color:#e6004c;
+	text-decoration: none;
+}
+.dropbtn {
+  border: none;
+	background-color: #fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+.dropdown-content a {
+  display: block;
+	padding: 10px 25px;
+	font-size: 0.8 em;
+	font-family: 'Varela Round', sans-serif;
+	text-decoration: none;
+	color: #737373;
+}
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {display: block;}
+
+.lastres li ul li, .lastres h6{
+	font-size: 0.8em;
+	padding-top: 3pt;
+}
+
+
